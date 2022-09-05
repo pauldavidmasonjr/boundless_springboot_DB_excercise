@@ -27,7 +27,7 @@ public class MovieController {
 		return ResponseEntity.ok(movieWrapper);
 	}
 	
-	@GetMapping("/getStudent/{id}")
+	@GetMapping("/getMovie/{id}")
 	public ResponseEntity<MovieWrapper> getMovieById(@PathVariable Long id) {
 		
 		MovieWrapper movieWrapper = movieService.getMovieById(id);
